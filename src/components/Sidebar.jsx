@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { RiCloseLine } from "react-icons/ri";
-import { links } from "../assets/constants";
+import { links, logo } from "../assets/constants";
 import { HiOutlineMenu } from "react-icons/hi";
 import { useDispatch } from "react-redux";
 import { setInSearch } from "../redux/features/playerSlice";
@@ -41,7 +41,7 @@ const Sidebar = () => {
           onClick={() => hundelClickIN()}
         >
           <img
-            src="/src/assets/logo1.png"
+            src={logo}
             className="w-full h-24 object-contain"
           />
           <p className="font-semibold text-center tracking-md text-2xl ml-[-4px] text-gray-300">
@@ -74,7 +74,7 @@ const Sidebar = () => {
       >
         <Link to="/React-Music-Player/" onClick={() => hundelClickIN()}>
           <img
-            src="/src/assets/logo1.png"
+            src={logo}
             className="w-full h-24 object-contain"
           />
           <p className="font-semibold text-center tracking-md text-2xl ml-2 mt-[-4px] text-gray-300">
